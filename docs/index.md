@@ -12,11 +12,11 @@ hero:
       text: 快速开始
       link: /guide/quick-start
     - theme: alt
-      text: 概览
-      link: /guide/overview
+      text: 核心篇
+      link: /core/tool-node
     - theme: alt
-      text: 查看源码
-      link: https://github.com/langchain-ai/langgraphjs
+      text: 进阶篇
+      link: /advanced/custom-agent
 
 features:
   - icon: 🕸️
@@ -49,46 +49,74 @@ LangGraphJS 是一个用于构建 AI Agent 应用的图/状态机框架，基于
 - **流式输出**：实时事件流和增量结果
 - **预构建 Agent**：快速创建 ReAct 等模式的 AI Agent
 
-## 📚 文档导航
+## 📚 文档目录
 
 ### 指南篇
 适合初次接触 LangGraphJS 的开发者，快速了解项目结构和开发环境搭建。
 
-- [概览](/guide/overview) - LangGraphJS 是什么、设计哲学
-- [快速开始](/guide/quick-start) - 源码克隆、安装依赖、构建
-- [源码结构](/guide/structure) - Monorepo 结构、包间依赖关系
-- [调试指南](/guide/debugging) - VSCode 调试配置、断点技巧
+| 文档 | 描述 |
+|------|------|
+| [概览](/guide/overview) | LangGraphJS 是什么、设计哲学 |
+| [快速开始](/guide/quick-start) | 源码克隆、安装依赖、构建 |
+| [源码结构](/guide/structure) | Monorepo 结构、包间依赖关系 |
+| [调试指南](/guide/debugging) | VSCode 调试配置、断点技巧 |
 
 ### 架构篇
 从宏观角度理解 LangGraphJS 的整体架构设计。
 
-- [整体架构](/architecture/overview) - 分层架构、图执行流程
-- [Pregel 系统](/architecture/pregel) - Actor 模型、图执行引擎
-- [通道机制](/architecture/channel) - Channel、通道类型、状态管理
-- [状态管理](/architecture/state) - 状态机、中断、恢复
-- [Checkpoint 机制](/architecture/checkpoint) - 持久化、时间旅行
+| 文档 | 描述 |
+|------|------|
+| [整体架构](/architecture/overview) | 分层架构、图执行流程 |
+| [Pregel 系统](/architecture/pregel) | Actor 模型、图执行引擎 |
+| [通道机制](/architecture/channel) | Channel、通道类型、状态管理 |
+| [状态管理](/architecture/state) | 状态机、中断、恢复 |
+| [Checkpoint 机制](/architecture/checkpoint) | 持久化、时间旅行 |
 
 ### 核心篇
 深入源码细节，逐模块解析 LangGraphJS 的核心实现。
 
-- [Pregel 引擎](/core/pregel-engine) - pregel.ts、图执行、批处理
-- [StateGraph](/core/state-graph) - 状态图构建器
-- [Channel 通道](/core/channel) - 通道类型、消息通道
-- [图编译](/core/graph-compile) - graph.compile()、编译流程
-- [预构建 Agent](/core/prebuilt-agent) - createReactAgent、ToolNode
-- [中断机制](/core/interrupt) - interrupt()、断点恢复
-- [流式输出](/core/streaming) - stream()、事件流
-- [Checkpoint 系统](/core/checkpoint-system) - 检查点保存与恢复
+#### 引擎模块
+| 文档 | 描述 |
+|------|------|
+| [Pregel 引擎](/core/pregel-engine) | pregel.ts、图执行、批处理 |
+| [StateGraph](/core/state-graph) | 状态图构建器 |
+| [图编译](/core/graph-compile) | graph.compile()、编译流程 |
+
+#### 通道模块
+| 文档 | 描述 |
+|------|------|
+| [Channel 通道](/core/channel) | 通道类型、消息通道 |
+| [消息通道](/core/message-channel) | 消息通道详解 |
+| [二元通道](/core/binary-channel) | 二元操作通道 |
+
+#### 执行与节点模块
+| 文档 | 描述 |
+|------|------|
+| [⭐ ToolNode](/core/tool-node) | 工具执行节点详解 |
+| [⭐ END 节点](/core/end-node) | 结束节点与流程终止 |
+| [⭐ 中断机制](/core/interrupt) | interrupt() 函数与人工审核 |
+| [⭐ 流式输出](/core/stream) | 流式输出与事件流 |
+
+#### 系统与存储模块
+| 文档 | 描述 |
+|------|------|
+| [⭐ 远程执行](/core/remote-graph) | RemoteGraph 与分布式部署 |
+| [⭐ Checkpoint 系统](/core/checkpoint-system) | 检查点系统详解 |
+| [⭐ Postgres 存储](/core/postgres-checkpoint) | Postgres 持久化实现 |
+| [⭐ Redis 存储](/core/redis-checkpoint) | Redis 高性能缓存 |
+| [⭐ SQLite 存储](/core/sqlite-checkpoint) | SQLite 本地存储 |
+| [⭐ 错误处理](/core/error-handling) | 错误类型与恢复策略 |
 
 ### 进阶篇
 探索高级用法和性能优化技巧。
 
-- [自定义 Agent](/advanced/custom-agent) - 创建自定义 Agent 节点
-- [多 Agent 协作](/advanced/swarm) - Swarm 模式
-- [时间旅行](/advanced/time-travel) - 调试与恢复
-- [性能优化](/advanced/performance) - 并发执行、缓存
-- [最佳实践](/advanced/best-practices) - 开发经验总结
-- [常见问题](/advanced/faq) - FAQ
+| 文档 | 描述 |
+|------|------|
+| [⭐ 自定义 Agent](/advanced/custom-agent) | 构建自定义 Agent 架构 |
+| [⭐ Swarm 协作](/advanced/swarm) | 多 Agent 协作模式 |
+| [⭐ 时间旅行](/advanced/time-travel) | 调试与状态恢复 |
+| [⭐ 性能优化](/advanced/performance) | 并发、缓存、内存优化 |
+| [⭐ 最佳实践](/advanced/best-practices) | 开发经验与 FAQ |
 
 ## 🚀 快速开始
 
@@ -136,6 +164,27 @@ pnpm test
 3. **深入核心篇**：逐个模块理解源码实现
 4. **实践进阶篇**：学习高级用法和优化技巧
 5. **参考官方文档**：结合源码和官方文档学习
+
+## 📖 文档更新记录
+
+### 新增核心篇文档
+- ✅ ToolNode 工具执行节点
+- ✅ END 结束节点
+- ✅ 中断机制详解
+- ✅ 流式输出详解
+- ✅ 远程执行 (RemoteGraph)
+- ✅ Checkpoint 系统深度解析
+- ✅ Postgres 存储实现
+- ✅ Redis 存储实现
+- ✅ SQLite 存储实现
+- ✅ 错误处理最佳实践
+
+### 新增进阶篇文档
+- ✅ 自定义 Agent 架构设计
+- ✅ Swarm 多 Agent 协作
+- ✅ 时间旅行与调试
+- ✅ 性能优化策略
+- ✅ 最佳实践与 FAQ
 
 ---
 

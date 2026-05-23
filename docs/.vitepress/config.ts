@@ -15,7 +15,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '指南', link: '/guide/overview' },
       { text: '架构', link: '/architecture/overview' },
-      { text: '核心', link: '/core/pregel-engine' },
+      { text: '核心', link: '/core/tool-node' },
       { text: '进阶', link: '/advanced/custom-agent' },
     ],
 
@@ -61,33 +61,22 @@ export default defineConfig({
           ],
         },
         {
-          text: '核心篇 - 执行',
+          text: '核心篇 - 执行与节点',
           items: [
-            { text: '流式输出', link: '/core/streaming' },
+            { text: 'ToolNode 工具节点', link: '/core/tool-node' },
+            { text: 'END 结束节点', link: '/core/end-node' },
             { text: '中断机制', link: '/core/interrupt' },
-            { text: 'ToolNode', link: '/core/tool-node' },
-            { text: 'END 节点', link: '/core/end-node' },
+            { text: '流式输出', link: '/core/stream' },
           ],
         },
         {
-          text: '核心篇 - Agent',
+          text: '核心篇 - 系统与存储',
           items: [
-            { text: '预构建 Agent', link: '/core/prebuilt-agent' },
-            { text: '远程执行', link: '/core/remote-execution' },
-          ],
-        },
-        {
-          text: '核心篇 - Checkpoint',
-          items: [
+            { text: '远程执行', link: '/core/remote-graph' },
             { text: 'Checkpoint 系统', link: '/core/checkpoint-system' },
-            { text: 'Postgres 存储', link: '/core/postgres-storage' },
-            { text: 'Redis 存储', link: '/core/redis-storage' },
-            { text: 'SQLite 存储', link: '/core/sqlite-storage' },
-          ],
-        },
-        {
-          text: '核心篇 - 错误处理',
-          items: [
+            { text: 'Postgres 存储', link: '/core/postgres-checkpoint' },
+            { text: 'Redis 存储', link: '/core/redis-checkpoint' },
+            { text: 'SQLite 存储', link: '/core/sqlite-checkpoint' },
             { text: '错误处理', link: '/core/error-handling' },
           ],
         },
@@ -97,11 +86,10 @@ export default defineConfig({
           text: '进阶篇',
           items: [
             { text: '自定义 Agent', link: '/advanced/custom-agent' },
-            { text: '多 Agent 协作', link: '/advanced/swarm' },
+            { text: 'Swarm 多 Agent 协作', link: '/advanced/swarm' },
             { text: '时间旅行', link: '/advanced/time-travel' },
             { text: '性能优化', link: '/advanced/performance' },
-            { text: '最佳实践', link: '/advanced/best-practices' },
-            { text: '常见问题', link: '/advanced/faq' },
+            { text: '最佳实践与 FAQ', link: '/advanced/best-practices' },
           ],
         },
       ],
