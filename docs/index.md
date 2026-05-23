@@ -5,7 +5,7 @@ hero:
   text: 从图执行引擎到 AI Agent 架构
   tagline: 深入理解 LangGraphJS 的核心原理与实现细节
   image:
-    src: /logo.png
+    src: /logo.svg
     alt: LangGraphJS Logo
   actions:
     - theme: brand
