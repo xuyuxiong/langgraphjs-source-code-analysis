@@ -166,21 +166,6 @@ pnpm docs:preview
 
 ---
 
-## 📝 关于本文档
-
-本文档基于 LangGraphJS 最新版本源码编写，所有代码示例和分析均基于本地源码`/Users/xilin/Documents/sources/langgraphjs/`。
-
-文档特点：
-- ✅ **源码驱动**：所有内容基于实际源码，包含准确的源码路径和代码片段
-- ✅ **深度解析**：每篇核心文档 6000-19000 字，包含完整的源码分析
-- ✅ **实战导向**：提供调试技巧、常见问题源码级解答
-- ✅ **准确性保证**：100% 准确率验证，30 篇文档全部通过源码对照检查
-- ✅ **持续更新**：跟随源码更新，保持文档准确性
-
-与 [Vue](/vue-source-code-analysis)、[NestJS](/nest-source-code-analysis)、[qiankun](/qiankun-source-code-analysis) 等源码解析项目风格保持一致。
-
----
-
 ## 📄 许可证
 
 MIT License
