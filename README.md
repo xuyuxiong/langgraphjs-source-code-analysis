@@ -145,19 +145,6 @@ pnpm docs:preview
 
 ---
 
-## 🔗 相关项目
-
-### 源码解析系列
-
-- [Vue 源码深度解析](https://github.com/xuyuxiong/vue-source-code-analysis) - 233 篇
-- [LangChainJS 源码深度解析](https://github.com/xuyuxiong/langchainjs-source-code-analysis) - 175 篇
-- [Ant Design X 源码深度解析](https://github.com/xuyuxiong/ant-design-x-source-code-analysis) - 169 篇
-- [qiankun 源码深度解析](https://github.com/xuyuxiong/qiankun-source-code-analysis) - 164 篇
-- [lowcode-engine 源码深度解析](https://github.com/xuyuxiong/lowcode-engine-source-code-analysis) - 164 篇
-- [NestJS 源码深度解析](https://github.com/xuyuxiong/nest-source-code-analysis) - 166 篇
-- [UmiJS 源码深度解析](https://github.com/xuyuxiong/umi-source-code-analysis) - 29 篇
-- **LangGraphJS 源码深度解析** (本项目) - 30 篇
-
 ### 官方资源
 
 - [LangGraph 官方文档](https://langchain-ai.github.io/langgraphjs/)
