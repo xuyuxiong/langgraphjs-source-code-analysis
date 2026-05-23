@@ -4,15 +4,28 @@ export default defineConfig({
   title: 'LangGraphJS 源码深度解析',
   description: '从图执行引擎到 AI Agent 架构',
 
+  // GitHub Pages 部署配置
+  base: '/langgraphjs-source-code-analysis/',
+
   ignoreDeadLinks: true,
 
   head: [
-    ['link', { rel: 'icon', href: '/logo.svg' }],
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    [
+      'link',
+      { rel: 'icon', href: '/langgraphjs-source-code-analysis/logo.svg' },
+    ],
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/svg+xml',
+        href: '/langgraphjs-source-code-analysis/logo.svg',
+      },
+    ],
   ],
 
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/langgraphjs-source-code-analysis/logo.svg',
     siteTitle: 'LangGraphJS 源码深度解析',
 
     nav: [
