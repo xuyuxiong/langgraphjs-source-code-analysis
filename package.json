@@ -1,0 +1,29 @@
+{
+  "name": "langgraphjs-source-code-analysis",
+  "version": "1.0.0",
+  "description": "LangGraphJS 源码深度解析 - 从图执行引擎到 AI Agent 架构",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "langgraphjs",
+    "langgraph",
+    "langchain",
+    "ai-agent",
+    "source-code",
+    "pregel",
+    "state-machine",
+    "graph",
+    "javascript",
+    "typescript"
+  ],
+  "author": "see IDENTITY.md",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0",
+    "vue": "^3.4.0"
+  }
+}
